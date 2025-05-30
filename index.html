@@ -59,13 +59,13 @@
     <!-- Sticky Navbar -->
     <nav class="sticky-nav bg-white shadow-lg">
         <div class="container mx-auto px-4 py-3">
-            <div class="flex justify-between items-center">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                 <h1 class="text-2xl font-bold text-candy-pink">SweetScape</h1>
-                <div class="flex space-x-4">
-                    <button class="px-4 py-2 rounded-full bg-candy-pink text-white hover:bg-opacity-80 transition">All</button>
-                    <button class="px-4 py-2 rounded-full bg-candy-blue text-white hover:bg-opacity-80 transition">Blue</button>
-                    <button class="px-4 py-2 rounded-full bg-candy-pink text-white hover:bg-opacity-80 transition">Pink</button>
-                    <button class="px-4 py-2 rounded-full bg-candy-yellow text-white hover:bg-opacity-80 transition">Yellow</button>
+                <div class="flex flex-wrap justify-center gap-2">
+                    <button class="px-4 py-2 rounded-full bg-candy-pink text-white hover:bg-opacity-80 transition text-sm">All</button>
+                    <button class="px-4 py-2 rounded-full bg-candy-blue text-white hover:bg-opacity-80 transition text-sm">Blue</button>
+                    <button class="px-4 py-2 rounded-full bg-candy-pink text-white hover:bg-opacity-80 transition text-sm">Pink</button>
+                    <button class="px-4 py-2 rounded-full bg-candy-yellow text-white hover:bg-opacity-80 transition text-sm">Yellow</button>
                 </div>
             </div>
         </div>
@@ -73,9 +73,9 @@
 
     <!-- Main Content -->
     <div class="container mx-auto px-4 py-8">
-        <div class="flex">
+        <div class="flex flex-col lg:flex-row">
             <!-- Sidebar Filters -->
-            <div class="w-64 pr-8">
+            <div class="w-full lg:w-64 mb-8 lg:mb-0 lg:pr-8">
                 <h2 class="text-xl font-bold mb-4">Filter by Type</h2>
                 <div class="space-y-3 sidebar-filters">
                     <label class="flex items-center space-x-2">
@@ -99,7 +99,7 @@
 
             <!-- Gallery Grid -->
             <div class="flex-1">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                     <!-- Gallery Items -->
                     <div class="gallery-item bg-white rounded-lg shadow-md overflow-hidden cursor-pointer">
                         <img src="https://www.southernliving.com/thmb/1Z7ogPGtQPKgUFQna23Xc0IzEBM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/2665601_ErinN_0213-2000-7b88f1a2e1bd40bba7070fc01476cf3d-484ae9dad9cd490f9c4b749ed55e995a.jpg" alt="Chocolate Candy" class="w-full h-48 object-cover">
@@ -139,7 +139,7 @@
     <footer class="bg-gradient-to-r from-candy-pink to-candy-purple text-white py-12 mt-12">
         <div class="container mx-auto px-4">
             <!-- Main Footer Content -->
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
                 <!-- About Section -->
                 <div class="col-span-1 md:col-span-2">
                     <h2 class="text-3xl font-bold mb-4">SweetScape</h2>
@@ -190,11 +190,11 @@
                 <h3 class="text-2xl font-bold mb-6">Sweet Moments</h3>
                 <div class="overflow-hidden">
                     <div class="footer-scroll flex space-x-4">
-                        <img src="https://media.4-paws.org/a/0/2/f/a02f8af7bc68042d8501bcef64493f37a80a2858/Gummy%20Candy%20for%20Halloween%20Candy%20Guide_October%202022_Yes_and_Studio-2329x1612-1920x1329.jpg" alt="Candy 1" class="w-48 h-48 object-cover rounded-lg shadow-lg hover:scale-105 transition">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Fale_-_Barcellona_-_194.jpg" alt="Candy 2" class="w-48 h-48 object-cover rounded-lg shadow-lg hover:scale-105 transition">
-                        <img src="https://www.thespruceeats.com/thmb/7wC9mUcN_4s2-GS0Ya3e4wxcgwU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/lollipops-521375-hero-01-867964a42c3e4f32ad48384322b69ebe.jpg" alt="Candy 3" class="w-48 h-48 object-cover rounded-lg shadow-lg hover:scale-105 transition">
-                        <img src="https://ktla.com/wp-content/uploads/sites/4/2022/08/GettyImages-176869502.jpg?strip=1" alt="Candy 4" class="w-48 h-48 object-cover rounded-lg shadow-lg hover:scale-105 transition">
-                        <img src="https://s3.ap-south-1.amazonaws.com/tmt-stagapp/upload/products/4391694688533.JPG" alt="Candy 5" class="w-48 h-48 object-cover rounded-lg shadow-lg hover:scale-105 transition">
+                        <img src="https://media.4-paws.org/a/0/2/f/a02f8af7bc68042d8501bcef64493f37a80a2858/Gummy%20Candy%20for%20Halloween%20Candy%20Guide_October%202022_Yes_and_Studio-2329x1612-1920x1329.jpg" alt="Candy 1" class="w-32 h-32 sm:w-48 sm:h-48 object-cover rounded-lg shadow-lg hover:scale-105 transition">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Fale_-_Barcellona_-_194.jpg" alt="Candy 2" class="w-32 h-32 sm:w-48 sm:h-48 object-cover rounded-lg shadow-lg hover:scale-105 transition">
+                        <img src="https://www.thespruceeats.com/thmb/7wC9mUcN_4s2-GS0Ya3e4wxcgwU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/lollipops-521375-hero-01-867964a42c3e4f32ad48384322b69ebe.jpg" alt="Candy 3" class="w-32 h-32 sm:w-48 sm:h-48 object-cover rounded-lg shadow-lg hover:scale-105 transition">
+                        <img src="https://ktla.com/wp-content/uploads/sites/4/2022/08/GettyImages-176869502.jpg?strip=1" alt="Candy 4" class="w-32 h-32 sm:w-48 sm:h-48 object-cover rounded-lg shadow-lg hover:scale-105 transition">
+                        <img src="https://s3.ap-south-1.amazonaws.com/tmt-stagapp/upload/products/4391694688533.JPG" alt="Candy 5" class="w-32 h-32 sm:w-48 sm:h-48 object-cover rounded-lg shadow-lg hover:scale-105 transition">
                     </div>
                 </div>
             </div>
